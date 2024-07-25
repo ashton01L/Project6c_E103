@@ -41,9 +41,9 @@ def std_dev(person_list):
     return variance ** 0.5
 
 # Example usage:
-p1 = Person("Kyoungmin", 73)
-p2 = Person("Mercedes", 24)
-p3 = Person("Beatrice", 48)
-person_list = [p1, p2, p3]
-answer = std_dev(person_list)
-print(f"{answer:.5f}");
+# p1 = Person("Kyoungmin", 73)
+# p2 = Person("Mercedes", 24)
+# p3 = Person("Beatrice", 48)
+# person_list = [p1, p2, p3]
+# answer = std_dev(person_list)
+# print(f"{answer:.5f}");
