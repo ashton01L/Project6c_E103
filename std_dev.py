@@ -6,18 +6,13 @@
 
 class Person:
     # Define private class attributes
-    _name = ""
-    _age = 0
-
-    def initialize(self, name, age):
+    def __init__(self, name, age):
         # Initialize private attributes
         self._name = name
         self._age = age
 
-
     def get_age(self):
         return self._age
-
 
 def std_dev(person_list):
     """
@@ -43,18 +38,12 @@ def std_dev(person_list):
     variance = sum((age - mean_age) ** 2 for age in ages) / n
 
     # Calculate standard deviation using exponentiation
-    standard_deviation = variance ** 0.5
-
-    # Returns the calculatedstandard deviation
-    return standard_deviation
+    return variance ** 0.5
 
 # Example usage:
-# p1 = Person()
-# p1.initialize("Kyoungmin", 73)
-# p2 = Person()
-# p2.initialize("Mercedes", 24)
-# p3 = Person()
-# p3.initialize("Beatrice", 48)
-# person_list = [p1, p2, p3]
-# answer = std_dev(person_list)
-# print(f"{answer:.5f}");
+p1 = Person("Kyoungmin", 73)
+p2 = Person("Mercedes", 24)
+p3 = Person("Beatrice", 48)
+person_list = [p1, p2, p3]
+answer = std_dev(person_list)
+print(f"{answer:.5f}");
